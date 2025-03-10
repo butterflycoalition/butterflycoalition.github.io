@@ -1,0 +1,41 @@
+<html>
+<head>
+<script type="text/javascript" src="encrypt.js"></script>
+<style type="text/css">
+	.off {
+		pointer-events: none;
+		cursor: default;
+		color: Gray;
+	}
+</style>
+</head>
+<body>
+<label for="private-key">Your private key -- save it locally so you can read my response, but don't share it:</label>
+<input type="text" id="private-key" size=80 value=""/>
+<br/>
+<label for="own-public-key">Your public key -- send it to me so I can encrypt your response:</label>
+<input type="text" id="own-public-key" size=80 value=""/>
+<br/><br/>
+<label for="public-key">Public key of other party:</label>
+<input type="text" id="public-key" size=64 value="MCowBQYDK2VuAyEABaV/A9eeTX/nccT1JQ+nJXkxUb9diLhcPfn5gxYJsgY="/>
+<br/>
+<label for="message">Input file for encryption:</label>
+<input
+  type="file"
+  id="message"
+  name="message"
+  value="" />
+<br/>
+<a id="link" href="" class="off">Encrypted</a>
+<br/>
+<label for="message2">Input file for decryption:</label>
+<input
+  type="file"
+  id="message2"
+  name="message2"
+  value="" />
+<br/>
+<a id="link2" href="" class="off">Decrypted</a>
+</div>
+</body>
+</html>
